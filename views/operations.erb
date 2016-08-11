@@ -1,0 +1,13 @@
+      
+       <% if @operation_function.to_s == "add" %>
+		<%= @number_1.to_i + @number_2.to_i %>
+		<% elsif @operation_function.to_s == "subtract" %>
+		
+		<%= @number_1.to_i - @number_2.to_i %>
+		
+	 <%	elsif @operation_function.to_s == "multiply" %>
+		<%= (@number_1.to_i) * (@number_2.to_i) %>
+		<% else %> 
+         <%= @number_1.to_i / @number_2.to_i %>   
+       <% end %>
+
